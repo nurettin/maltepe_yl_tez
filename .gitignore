@@ -6,5 +6,7 @@
 *.lof
 *.lot
 *.aux
+*.bbl
+*.blg
 # libreoffice çöpleri
 *.~
