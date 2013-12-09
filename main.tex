@@ -20,6 +20,7 @@
 \renewcommand{\contentsname}{İÇİNDEKİLER}
 \renewcommand{\listfigurename}{ŞEKİL LİSTESİ}
 \renewcommand{\listtablename}{TABLO LİSTESİ}
+\renewcommand{\refname}{REFERANSLAR}
 
 % işe yarar paketler
 \usepackage{blindtext} % lorem ipsum 
@@ -55,7 +56,7 @@
 \cite{Armand2006,Arora2008,Bahlmann2002}
 \clearpage
 
-\pagenumbering{gobble}
+\addcontentsline{toc}{section}{REFERANSLAR}
 \bibliographystyle{plain}
 \bibliography{referans}
 \end{document}
