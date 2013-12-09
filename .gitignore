@@ -1,0 +1,10 @@
+# latexin ürettiği dosyalar
+*.pdf
+*.gz
+*.log
+*.toc
+*.lof
+*.lot
+*.aux
+# libreoffice çöpleri
+*.~
