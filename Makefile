@@ -1,6 +1,7 @@
-main: main.tex
+main:
 	@pdflatex main.tex
-	@bibtex main.aux
+	@bibtex main
+	@pdflatex main.tex
 	@pdflatex main.tex
 clean:
 	@rm -rf *.toc *.gz *.log *.lot *.lof *.aux *.log *.pdf *.blg *.bbl

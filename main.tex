@@ -1,21 +1,19 @@
-% !TeX encoding = UTF-8
-\documentclass[12pt,a4paper]{article} % başlık sayfalı 10pt metin
+\documentclass[12pt,a4paper]{article} % başlık sayfalı 12pt metin
 % yazı girdisi ayarları
 \usepackage{times} % times new roman fontu kullan
 \usepackage[utf8]{inputenc} % tex dosyası utf-8 karakter desteği
-\usepackage{extsizes} % büyük boy metin
-\usepackage[none]{hyphenat} % kesme işareti kullanımını iptal et
-
-% sayfa ayarları
-\usepackage[margin=4cm]{geometry} % özel kenar boşlukları
-\usepackage{indentfirst} % ilk paragrafı da içeriden başlat
 
 % yazı çıktısı ayarları
-\usepackage{setspace} % satır aralıkları
-\onehalfspacing % 1.5 birim satır aralığı
-% \usepackage{titlesec} % başlık boşlukları ayarları
-% \titlespacing*{\section}{0pt}{0ex}{10ex} % section başlık boşluğu
-\usepackage{tocloft} % içerik başlığı kontrol 
+\usepackage[margin=4cm]{geometry} % özel kenar boşlukları
+\usepackage{indentfirst} % ilk paragrafı da içeriden başlat
+\usepackage[none]{hyphenat} % kesme işareti kullanımını iptal et
+\usepackage{setspace}\onehalfspacing % 1.5 birim satır aralığı
+
+% kapakta kullanılan yerleştirmeler
+\usepackage[absolute,overlay]{textpos} % koordinatlı metin kutuları
+\setlength{\TPHorizModule}{1mm} % metin kutusu x birimi
+\setlength{\TPVertModule}{1mm} % metin kutusu y birimi
+
 % başlıkları Türkçeleştir
 \renewcommand{\contentsname}{İÇİNDEKİLER}
 \renewcommand{\listfigurename}{ŞEKİL LİSTESİ}
@@ -26,11 +24,6 @@
 \usepackage{blindtext} % lorem ipsum 
 \usepackage{graphicx} % resim ekleyebil
 
-% kapakta kullanılan yerleştirmeler
-\usepackage[absolute,overlay]{textpos} % koordinatlı metin kutuları
-	\setlength{\TPHorizModule}{1mm} % metin kutusu x birimi
-	\setlength{\TPVertModule}{1mm} % metin kutusu y birimi
-
 \begin{document}
 
 \input{chapters/cover}
@@ -38,7 +31,7 @@
 \setlength\parindent{1cm}
 \input{chapters/abstract_tr}
 \input{chapters/abstract_en}
-\input{chapters/thanks}
+\input{chapters/acknowledgement}
 \input{chapters/contents}
 \pagenumbering{arabic}
 \setlength\parindent{0cm}
